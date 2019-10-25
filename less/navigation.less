@@ -1,28 +1,38 @@
 // Navigation Styles here
 .container_nav {
-    display: flex;
-    flex-direction: row-reverse;
+    .display_flex(flex, row-reverse);
     justify-content: space-between;
-    margin-top: 2rem;
     // width same size as the main container in global file
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
+
+    @media @mobile {
+        .display_flex(flex, column-reverse);
+        align-items: center;
+    }
+
     .navigation {
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: 1rem;
+        margin-top: 1.3rem;
+
+        @media @mobile {
+            display: flex;
+        }
+
         a {
             text-decoration: none;
             font-size: 1.8rem;
             margin: 1rem;
-            color: rgb(29, 28, 28);
+            color: @font-color;
         }
     }
-    .top_logo{
-        font-size: 4rem;
-        color: rgb(29, 28, 28);
-        font-family: 'Bubblegum Sans', cursive;
-    }
+
+}
+
+.top_logo {
+    font-size: 4rem;
+    color: @shark;
+    font-family: 'Indie Flower', cursive;
 }

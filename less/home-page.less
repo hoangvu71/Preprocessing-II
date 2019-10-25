@@ -1,38 +1,58 @@
 header{
-  width:100%;
   border-top: 1px dashed black;
+  max-width: 900px;
+  width: 100%;
   margin: 0 auto;
-  width: 70vw;
-  display: flex;
-  justify-content: center;
-  .top_image{
-      width: 800px;
-  }
+}
+.top_image{
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container_welcome{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 }
   .header_welcome{
-    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dashed @shark  ;
   }
+
+  //below header here:
 .home {
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile{
+      .display_flex(flex, column);
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        width: 90%;
+        margin: 0 auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile{
+        width: 90%;
+        margin: 0 auto;
+      }
 
       img {
         border-radius: 10px;
@@ -42,7 +62,8 @@ header{
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border; 
+    .display_flex(flex, column-reverse);
 
     .text-content {
       padding-left: 1%;
@@ -69,12 +90,24 @@ header{
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile{
+      .display_flex(flex, column);
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        width: 70%;
+        margin: 0 auto;
+      }
       .btn{
-        .buttonCool(18rem, 4rem, @btn-color)
+        .buttonCool(18rem, 4rem, @btn-color);
+        @media @mobile{
+          width: 90%;
+          background-color: rgb(12,150,169);
+          margin-bottom: 2rem;
+        }
       }
     }
   }
