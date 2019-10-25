@@ -199,6 +199,9 @@ img {
   margin: 1rem;
   color: #212529;
 }
+.container_nav .navigation a:hover {
+  opacity: 0.4;
+}
 .top_logo {
   font-size: 4rem;
   color: #212529;
@@ -326,6 +329,9 @@ header {
   color: white;
   text-align: center;
   padding: 0.8rem;
+}
+.home .content-pick .destination .btn:hover {
+  opacity: 0.4;
 }
 @media (max-width: 1000px) {
   .home .content-pick .destination .btn {
