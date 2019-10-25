@@ -172,7 +172,10 @@ img {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .container_nav .navigation {
   display: flex;
@@ -181,11 +184,14 @@ img {
 }
 .container_nav .navigation a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 1rem;
+  color: #1d1c1c;
 }
 .container_nav .top_logo {
   font-size: 4rem;
+  color: #1d1c1c;
+  font-family: 'Bubblegum Sans', cursive;
 }
 .footer {
   width: 100%;
@@ -197,6 +203,24 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header {
+  width: 100%;
+  border-top: 1px dashed black;
+  margin: 0 auto;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+}
+header .top_image {
+  width: 800px;
+}
+.header_welcome {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed black;
 }
 .home .content-section {
   margin: 30px 0;
@@ -243,4 +267,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 18rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #018080;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
 }
